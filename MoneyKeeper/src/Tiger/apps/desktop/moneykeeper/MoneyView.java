@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.Font;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 
 public class MoneyView extends JFrame {
 
@@ -29,11 +30,17 @@ public class MoneyView extends JFrame {
 		contentPane.setLayout(null);
 		
 		JMenuBar menuBar = new JMenuBar();
-		menuBar.setBounds(0, 0, 97, 21);
+		menuBar.setBounds(0, 0, 577, 21);
 		contentPane.add(menuBar);
 		
 		JMenu file = new JMenu("File");
 		menuBar.add(file);
+		
+		JMenuItem newfile = new JMenuItem("New ");
+		file.add(newfile);
+		
+		JMenuItem openfile = new JMenuItem("Open");
+		file.add(openfile);
 		
 		JMenu Edit = new JMenu("Edit");
 		menuBar.add(Edit);
