@@ -27,7 +27,7 @@ public class MoneyView extends JFrame {
 	private JTextField ncard;
 	private JTextField codecard;
 	private JTextField money;
-
+	JButton AddMoney;
 	
 	/**
 	 * Create the frame.
@@ -164,12 +164,15 @@ public class MoneyView extends JFrame {
 		contentPane.add(money);
 		money.setColumns(10);
 		
-		JButton btnAddMoney = new JButton("Add Money");
-		btnAddMoney.setBounds(233, 306, 89, 23);
-		contentPane.add(btnAddMoney);
+		AddMoney = new JButton("Add Money");
+		AddMoney.setBounds(233, 306, 89, 23);
+		contentPane.add(AddMoney);
 		
 		JButton btnAnnuler = new JButton("Annuler");
 		btnAnnuler.setBounds(346, 306, 89, 23);
 		contentPane.add(btnAnnuler);
+	}
+	public void addmoney(ActionListener ok){
+		AddMoney.addActionListener(ok);
 	}
 }

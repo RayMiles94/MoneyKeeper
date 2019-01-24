@@ -21,4 +21,10 @@ public class MoneyModel {
 	   mystat = conn.createStatement();
    }
 	
+   public void addmoney(int card,int codecard,String client, String mp,int money) throws SQLException{
+	    String query = "'"+card+"','"+codecard+"','"+client+"','"+mp+"','"+money+"'";
+	    Statement mystat2 = conn.createStatement();
+	    mystat2.executeUpdate("INSERT INTO person(nom,mp,ncard,code,money) VALUES("+query+")");
+   }	
+	
 }
