@@ -10,6 +10,8 @@ import java.awt.Font;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -88,12 +90,22 @@ public class MoneyView extends JFrame {
 		menuBar.add(Help);
 		
 		JMenuItem mntmWelcome = new JMenuItem("Welcome");
+		mntmWelcome.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane.showMessageDialog(null, "Welcome to this program where u can add your money");
+			}
+		});
 		Help.add(mntmWelcome);
 		
 		JMenuItem mntmPageWeb = new JMenuItem("Page Web");
 		Help.add(mntmPageWeb);
 		
 		JMenuItem mntmAbout = new JMenuItem("About");
+		mntmAbout.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				 JOptionPane.showMessageDialog(null, "this application create by abd raouf");
+			}
+		});
 		Help.add(mntmAbout);
 		
 		JPanel bluebar = new JPanel();
