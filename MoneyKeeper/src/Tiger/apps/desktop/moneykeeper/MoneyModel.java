@@ -1,16 +1,20 @@
 package Tiger.apps.desktop.moneykeeper;
 
+import java.sql.*;
+
 public class MoneyModel {
 	int card;
 	int codecard;
 	String client;
 	String mp;
 	int money;
-   public MoneyModel(){
+	
+	public MoneyModel(){
 	   card = 0;
 	   codecard=0;
 	   client="";
 	   mp="";
 	   money=0;
    }
+	
 }
