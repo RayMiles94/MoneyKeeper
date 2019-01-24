@@ -42,10 +42,37 @@ public class MoneyView extends JFrame {
 		JMenuItem openfile = new JMenuItem("Open");
 		file.add(openfile);
 		
+		JMenuItem Closeapp = new JMenuItem("Close");
+		file.add(Closeapp);
+		
 		JMenu Edit = new JMenu("Edit");
 		menuBar.add(Edit);
 		
+		JMenuItem mntmCut = new JMenuItem("Cut");
+		Edit.add(mntmCut);
+		
+		JMenuItem mntmCopy = new JMenuItem("Copy");
+		Edit.add(mntmCopy);
+		
+		JMenuItem mntmPaste = new JMenuItem("Paste");
+		Edit.add(mntmPaste);
+		
+		JMenuItem mntmDelete = new JMenuItem("Delete");
+		Edit.add(mntmDelete);
+		
 		JMenu Search = new JMenu("Search");
 		menuBar.add(Search);
+		
+		JMenu Help = new JMenu("Help");
+		menuBar.add(Help);
+		
+		JMenuItem mntmWelcome = new JMenuItem("Welcome");
+		Help.add(mntmWelcome);
+		
+		JMenuItem mntmPageWeb = new JMenuItem("Page Web");
+		Help.add(mntmPageWeb);
+		
+		JMenuItem mntmAbout = new JMenuItem("About");
+		Help.add(mntmAbout);
 	}
 }
